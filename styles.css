@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Karla',sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.main-container {
+    max-width: 630px;
+}
+
+.top-section {
+    background-color: white;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
+
+h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+.top {
+    color: hsl(71, 73%, 54%);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.gain {
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+}
+
+li {
+    list-style: none;
+    line-height: 20px;
+    color: hsl(204, 43%, 93%);
+    font-size: 13px;
+}
+
+.bottom-section {
+    display: flex;
+}
+
+.left {
+    background-color: hsl(179, 56%, 37%);
+    padding: 33px;
+    border-bottom-left-radius: 10px;
+}
+
+h3 {
+    color: hsl(204, 43%, 93%);
+    margin-bottom: 17px;
+}
+
+.price-per-month {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+.price {
+    color: hsl(204, 43%, 93%);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.per-month {
+    font-size: 15px;
+    color:  hsl(178, 45%, 67%);
+    font-weight: 700;
+}
+
+h4 {
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+button {
+    width: 100%;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: hsl(204, 43%, 93%);
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px  rgb(85, 98, 100);
+    transition: all 0.3s; 
+    font-family: 'Karla',sans-serif;
+}
+
+button:hover {
+    background-color: hsla(71, 73%, 54%, 0.788);
+   
+}
+
+.right {
+    background-color: hsl(179, 62%, 43%);
+    width: 52%;
+    border-bottom-right-radius: 10px;
+    padding: 33px;
+}
+
+@media (max-width: 630px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 35px;
+    }
+
+    .top-section {
+        font-size: 14.5px;
+    } 
+
+    .bottom-section {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .left {  
+        border-radius: 0px;
+    }
+
+    button {
+        font-size: 17px;
+    }
+
+    .right {
+        width: 100%;
+        border-bottom-left-radius: 10px;
+    }
+
+    li {
+        font-size: 13.5px;
+    }
+}
+ 
+
+/*.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }*/
